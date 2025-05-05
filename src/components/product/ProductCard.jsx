@@ -16,7 +16,7 @@ export default function ProductCard({ product }) {
   const { name, image, catagory, price, Stock, slug } = product;
   const isLowInStock = Stock <= "5";
   return (
-    <Card className="pt-0 hover:shadow-gray-400">
+    <Card className="pt-0 hover:shadow-gray-400 font-poppins">
       <CardHeader className="p-0">
         <Link to={`/products/${slug}`} className="product-link">
           <AspectRatio ratio={4 / 3}>

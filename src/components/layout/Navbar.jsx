@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div className="top-0 flex items-center justify-between bg-primary font-poppins h-20 px-4 md:px-8 lg:px-16">
+    <div className="top-0 flex items-center justify-between sm:justify-around bg-primary font-poppins h-20 px-4 md:px-8 lg:px-16 ">
       <div className="flex items-center">
         <img
           src={logo}
@@ -19,7 +19,7 @@ function Navbar() {
         <li className="hover:text-gray-700 cursor-pointer">About</li>
         <li className="hover:text-gray-700 cursor-pointer">Signup</li>
       </ul>
-      <div className="flex items-center gap-6">
+      <div className=" items-center gap-6 hidden md:flex" >
         <div className="bg-secondary flex items-center rounded-md px-3 py-1 h-10">
           <input
             type="text"
