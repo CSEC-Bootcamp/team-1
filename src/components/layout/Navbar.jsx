@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
 import { Heart, SearchIcon, ShoppingCart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
         />
       </div>
       <ul className="flex gap-6 md:gap-12 text-sm md:text-base">
-        <li className="hover:text-gray-700 cursor-pointer">Home</li>
+        <Link to="/">        <li className="hover:text-red-700 cursor-pointer" >Home</li></Link>
         <li className="hover:text-gray-700 cursor-pointer">Contact</li>
         <li className="hover:text-gray-700 cursor-pointer">About</li>
         <li className="hover:text-gray-700 cursor-pointer">Signup</li>
