@@ -23,25 +23,25 @@ export default function ProductCard({ product }) {
             <img
               src={image}
               alt={name}
-              className="w-full object-cover h-full rounded-t-md"
+              className="w-full object-cover h-full rounded-t-md "
             />
           </AspectRatio>
         </Link>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-1">
         <Link to={`/products/${slug}`} className="product-link">
           <CardTitle className="font-bold">{name}</CardTitle>
         </Link>
         <CardDescription className="m-1">{catagory}</CardDescription>
         <div className="flex">
           <span>ETB{price}</span>
-          <div className="ml-15">
+          <div className="">
             {isLowInStock && <Badge>only {Stock} remaining!</Badge>}
           </div>
         </div>
       </CardContent>
       <Link to={`/products/${slug}`} className="product-link">
-        <Button variant="outline" className=" ml-5 mr-5 border-black">
+        <Button className=" bg-red-600 w-full text-white ">
           <ShoppingBag /> Add to cart
         </Button>
       </Link>
