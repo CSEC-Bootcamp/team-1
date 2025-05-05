@@ -8,7 +8,7 @@ export default function ProductPage() {
       "https://media.istockphoto.com/id/1656300567/photo/tea-cup-with-teabag-teatime-creative-concepts.webp?a=1&b=1&s=612x612&w=0&k=20&c=sHsRYAoV-j_49x9JGB3NqOBGgzDJj0_hpX0qbuBzcOo=",
     catagory: "Home Utilities",
     price: "250",
-    Stock: 4,
+    Stock: 6,
     slug: "tea-cup",
   };
   return (
