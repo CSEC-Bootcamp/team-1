@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="relative h-[70vh] bg-gradient-to-r from-slate-800 to-slate-900 overflow-hidden">
+      <div className="relative h-[90vh] bg-gradient-to-r from-slate-800 to-slate-900 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
@@ -24,10 +24,9 @@ function Home() {
               products.
             </p>
             <Link to="/products">
-            <button class="bg-red-500 cursor-pointer text-white px-6 py-3 rounded-2xl shadow-lg hover:bg-black hover:text-white transition-all duration-300 font-semibold">
-  Browse Products
-</button>
-
+              <button class="bg-red-500 cursor-pointer text-white px-6 py-3 rounded-2xl shadow-lg hover:bg-red-900 hover:text-white transition-all duration-300 font-semibold">
+                Browse Products
+              </button>
             </Link>
           </div>
         </div>
