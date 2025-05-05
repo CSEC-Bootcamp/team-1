@@ -13,12 +13,11 @@ export default function ProductPage() {
   };
   return (
     <div>
-      <h1 className="flex font-bold text-2xl mb-2">
-        <Telescope className="mr-2 " />
+      <h1 className="flex font-bold text-2xl mb-2 text-red-600">
         Explore our products
       </h1>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 w-full px-3 sm:px-5 md:px-10 lg:px-20">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full px-3 sm:px-1 md:px-3 lg:px-5">
         <ProductCard product={product} />
         <ProductCard product={product} />
         <ProductCard product={product} />
