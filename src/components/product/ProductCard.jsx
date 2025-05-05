@@ -14,9 +14,9 @@ import { ShoppingBag } from "lucide-react";
 
 export default function ProductCard({ product }) {
   const { name, image, catagory, price, Stock, slug } = product;
-  const isLowInStock = Stock <= "5";
+  const isLowInStock = Stock <= 5;
   return (
-    <Card className="pt-0 hover:shadow-gray-400">
+    <Card className="pt-0 hover:shadow-gray-300 border-b-gray-500">
       <CardHeader className="p-0">
         <Link to={`/products/${slug}`} className="product-link">
           <AspectRatio ratio={4 / 3}>
@@ -30,12 +30,12 @@ export default function ProductCard({ product }) {
       </CardHeader>
       <CardContent className="p-1">
         <Link to={`/products/${slug}`} className="product-link">
-          <CardTitle className="font-bold">{name}</CardTitle>
+          <CardTitle className="font-bold pl-2">{name}</CardTitle>
         </Link>
-        <CardDescription className="m-1">{catagory}</CardDescription>
-        <div className="flex">
+        <CardDescription className="mt-1 mb-1 pl-2">{catagory}</CardDescription>
+        <div className="flex font-bold pl-2">
           <span>ETB{price}</span>
-          <div className="">
+          <div className="bg-red-600 rounded-2xl text-white font-bold ml-10">
             {isLowInStock && <Badge>only {Stock} remaining!</Badge>}
           </div>
         </div>

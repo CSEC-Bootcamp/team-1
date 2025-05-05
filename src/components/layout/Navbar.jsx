@@ -1,11 +1,11 @@
-import React from 'react';
-import logo from '../../assets/logo.png';
-import { Heart, SearchIcon, ShoppingCart } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import logo from "../../assets/logo.png";
+import { Heart, SearchIcon, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="top-0 flex items-center justify-between bg-primary font-poppins h-20 px-4 md:px-8 lg:px-16">
+    <div className="top-0 flex items-center justify-between bg-primary font-poppins h-20 px-4 md:px-8 lg:px-16 container">
       <div className="flex items-center">
         <img
           src={logo}
@@ -14,7 +14,10 @@ function Navbar() {
         />
       </div>
       <ul className="flex gap-6 md:gap-12 text-sm md:text-base">
-        <Link to="/">        <li className="hover:text-red-700 cursor-pointer" >Home</li></Link>
+        <Link to="/">
+          {" "}
+          <li className="hover:text-red-700 cursor-pointer">Home</li>
+        </Link>
         <li className="hover:text-gray-700 cursor-pointer">Contact</li>
         <li className="hover:text-gray-700 cursor-pointer">About</li>
         <li className="hover:text-gray-700 cursor-pointer">Signup</li>
