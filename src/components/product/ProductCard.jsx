@@ -13,13 +13,12 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 
 export default function ProductCard({ product }) {
-  const { name, image, catagory, price, Stock, slug } = product;
+  const { id ,name, image, catagory, price, Stock, slug } = product;
   const isLowInStock = Stock <= 5;
   return (
-    <Link to={`/products/${slug}`} className="product-link group block">
+    <Link to={`/products/${id}`} className="product-link group block" >
     <Card className="pt-0 hover:shadow-gray-700 font-poppins group block">
       <CardHeader className="p-0">
-        <Link to={`/products/${slug}`} className="product-link">
         <div className="aspect-square overflow-hidden">
           <img
             src={image}
@@ -27,7 +26,6 @@ export default function ProductCard({ product }) {
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:rounded-2xl rounded-2xl"
           />
         </div>
-        </Link>
       </CardHeader>
       <CardContent className="p-1">
         

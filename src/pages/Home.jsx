@@ -89,7 +89,7 @@ function Home() {
               products.
             </p>
             <Link to="/products">
-              <button class="bg-black cursor-pointer text-white px-6 py-3 rounded-2xl shadow-lg hover:caret-amber-400  hover:bg-white hover:text-black transition-all duration-300 font-semibold">
+              <button className="bg-black cursor-pointer text-white px-6 py-3 rounded-2xl shadow-lg hover:caret-amber-400  hover:bg-white hover:text-black transition-all duration-300 font-semibold">
                 Browse Products
               </button>
             </Link>

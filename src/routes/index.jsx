@@ -13,7 +13,7 @@ export default function RouteLayout() {
         
         <Route path="/products" element={<ProductPage />} />
         <Route path="/" element={<Home />} />
-        {/* <Route path="/product/:productId" element={<ProductDetail />} /> */}
+        <Route path="/products/:productId" element={<ProductDetail />} />
       </Routes>
       <Fotter/>
     </BrowserRouter>

@@ -10,19 +10,16 @@ import { products } from '../../Data/products';
 import { Button } from '../ui/button';
 import Container from '../ui/Container';
 import Layout from '../ui/layout';
+import { Badge } from '../ui/badge';
 
 function ProductDetail() {
-    const { productId } = useParams(); // Removed TypeScript type annotation
+    const { productId } = useParams(); 
     const navigate = useNavigate();
+    console.log("productId is "+productId)
     
-    const product = products.find(p => p.id === Number(productId));
+    const product = products.find(p => p.id === productId);
+    console.log("product"+ product.id)
     
-    const [selectedColor, setSelectedColor] = useState(
-      product?.colors?.[0] // Removed TypeScript type annotation
-    );
-  const [selectedSize, setSelectedSize] = useState<string | undefined>(
-    product?.sizes?.[0]
-  );
   const [quantity, setQuantity] = useState(1);
   
   if (!product) {
@@ -78,22 +75,22 @@ function ProductDetail() {
                 <span className="ml-1 text-gray-600 text-sm">({product.ratingCount})</span>
               </div>
 
-              {product.stock ? (
-                <Badge variant="success" className="flex items-center">
+              {product.stock >= 5 ? (
+                <Badge variant="success" className="flex items-center text-green-400">
                   <Check className="h-3 w-3 mr-1" />
                   In Stock
                 </Badge>
               ) : (
-                <Badge variant="error">Out of Stock</Badge>
+                <Badge variant="error" className="text-red-500">Out of Stock</Badge>
               )}
             </div>
 
             <div className="mb-4">
               <div className="flex items-baseline">
-                <span className="text-2xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
-                {product.price && (
+                <span className="text-2xl font-bold text-gray-900">${product.price}</span>
+                {/* {product.price && (
                   <span className="ml-2 text-gray-500 line-through">${product.price.toFixed(2)}</span>
-                )}
+                )} */}
                 {/* {product.di && (
                   <Badge variant="sale" className="ml-3">
                     {product.discount}% OFF
