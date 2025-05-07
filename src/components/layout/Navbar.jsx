@@ -5,27 +5,30 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-<<<<<<< HEAD
-    <div className="top-0 flex items-center justify-between bg-primary font-poppins h-20 px-4 md:px-8 lg:px-16 container">
-=======
-    <div className="top-0 flex items-center justify-between sm:justify-around bg-primary font-poppins h-20 px-4 md:px-8 lg:px-16 ">
->>>>>>> e308e9f0fa3733858607be2fc7c647851bc9f3dc
-      <div className="flex items-center">
-        <img
-          src={logo}
-          alt="Logo"
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
-        />
+    <div className=" flex items-center justify-between sm:justify-around bg-primary font-poppins h-20 lg:px-16 shadow-lg rounded-b  w-full container mx-auto px-4 md:px-6 max-w-7xl sticky top-0 z-40">
+       <div className="flex items-center">
+        <div className="font-bold text-xl text-gray-900">Yigzu</div>
       </div>
-      <ul className="flex gap-6 md:gap-12 text-sm md:text-base">
-        <Link to="/">
-          {" "}
-          <li className="hover:text-red-700 cursor-pointer">Home</li>
+      <nav className="hidden md:flex items-center space-x-6">
+        <Link
+          to="/"
+          className="text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          Home
         </Link>
-        <li className="hover:text-gray-700 cursor-pointer">Contact</li>
-        <li className="hover:text-gray-700 cursor-pointer">About</li>
-        <li className="hover:text-gray-700 cursor-pointer">Signup</li>
-      </ul>
+        <Link
+          to="/contact"
+          className="text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          Contact
+        </Link>
+        <Link
+          to="/about"
+          className="text-gray-600 hover:text-gray-900 transition-colors"
+        >
+          About
+        </Link>
+      </nav>
       <div className=" items-center gap-6 hidden md:flex" >
         <div className="bg-secondary flex items-center rounded-md px-3 py-1 h-10">
           <input
