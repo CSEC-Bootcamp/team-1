@@ -111,7 +111,7 @@ function Fotter() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">support@shoply.com</span>
+                <span className="text-gray-400">support@yigzu.com</span>
               </li>
             </ul>
           </div>
@@ -120,7 +120,7 @@ function Fotter() {
         <div className="border-t border-gray-800 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} SHOPLY. All rights reserved.
+              &copy; {new Date().getFullYear()} YIGZU. All rights reserved.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">

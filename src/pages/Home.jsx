@@ -101,7 +101,6 @@ function Home() {
           <h2 className="text-3xl font-bold text-slate-800 mb-6">
             Shop with confidence
           </h2>
-
           <p className="text-slate-600 max-w-2xl mx-auto mb-8">
             Our carefully selected products are designed to meet your needs with
             quality and reliability.
