@@ -5,16 +5,17 @@ import bgimage from "../assets/hero-image.jpg";
 import { ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Promosection from "../components/Promosection";
+import ProductPage from "./ProductPage";
 // import { Container } from "../components/ui/c";
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="relative bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-        <div className="py-12 lg:py-20 ">
+        <div className="py-12 lg:py-10 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 tracking-tight">
+            <div className="text-center lg:text-left mb-40">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-5 tracking-tight ">
                 Elevate Your Style This Season
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
@@ -22,17 +23,19 @@ function Home() {
                 designed for the modern lifestyle.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="flex items-center justify-center">
+                <Button size="lg" className="flex items-center justify-center cursor-pointer">
                   Shop New Arrivals
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
+                <Link to="/products">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center cursor-pointer"
                 >
                   Explore Collection
                 </Button>
+                </Link>
               </div>
             </div>
             <div className="relative">
@@ -49,8 +52,8 @@ function Home() {
                 </p>
                 <p className="text-sm text-gray-600 mb-2">Starting at $59.99</p>
                 <Link
-                  to="/category/new-arrivals"
-                  className="text-blue-600 text-sm font-medium hover:underline flex items-center"
+                  to="/products"
+                  className="text-blue-600 text-sm font-medium hover:underline flex items-center cursor-pointer"
                 >
                   Shop Now
                   <ArrowRight className="ml-1 h-4 w-4" />
@@ -62,7 +65,10 @@ function Home() {
         </div>
       </div>
       
+ 
+      
       <Promosection/>
+      {/* <ProductPage/> */}
       <div className="relative h-[90vh] bg-gradient-to-r from-slate-800 to-slate-900 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"

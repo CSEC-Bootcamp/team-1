@@ -1,3 +1,4 @@
+import Fotter from "../components/layout/Fotter";
 import Navbar from "../components/layout/Navbar";
 import Home from "../pages/Home";
 import ProductPage from "../pages/ProductPage";
@@ -12,6 +13,7 @@ export default function RouteLayout() {
         <Route path="/products" element={<ProductPage />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Fotter/>
     </BrowserRouter>
   );
 }
