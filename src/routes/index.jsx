@@ -5,7 +5,6 @@ import ProductDetail from "../components/product/ProductDetail";
 import Home from "../pages/Home";
 import ProductPage from "../pages/ProductPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Fotter from "../components/layout/Fotter";
 
 export default function RouteLayout() {
   return (
