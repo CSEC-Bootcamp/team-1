@@ -96,7 +96,7 @@ export const products = [{
     images: [
       "https://images.unsplash.com/photo-1586163179753-7fc3b24d0c46?q=80&w=1000&auto=format&fit=crop",
     ],
-    stock: 90,
+    stock: 5,
     categoryId: "b61abe0f-35ff-40e0-af1e-ed3ebe6c59b5",
     createdAt: "2025-05-01T14:10:14.187Z",
     updatedAt: "2025-05-01T14:10:14.187Z",
