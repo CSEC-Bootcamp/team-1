@@ -12,7 +12,7 @@ export default function ProductPage() {
     Stock: 6,
     slug: "tea-cup",
   };
-        
+
   return (
     <div className="px-4 md:px-8 lg:px-16">
       <h1 className="flex font-bold text-2xl mb-2 text-black px-4 md:px-8 lg:px-5">
@@ -20,17 +20,17 @@ export default function ProductPage() {
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
         {products.map((product) => (
-          <ProductCard  key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
-      </div> 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
-        <ProductCard product={product} />
-        <ProductCard product={product} />
-        <ProductCard product={product} />
-        <ProductCard product={product} />
-        <ProductCard product={product} />
-        <ProductCard product={product} />
       </div>
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+      </div> */}
     </div>
   );
 }

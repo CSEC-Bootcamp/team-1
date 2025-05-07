@@ -1,36 +1,49 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from 'lucide-react'
-import React from 'react'
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from "lucide-react";
+import React from "react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Fotter() {
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-6">
-      <div className='container mx-auto px-4 md:px-6 max-w-7xl'>
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">YIGZU</h3>
             <p className="text-gray-400 mb-4">
-              Premium shopping experience with curated products for your lifestyle.
+              Premium shopping experience with curated products for your
+              lifestyle.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Instagram"
               >
@@ -44,23 +57,35 @@ function Fotter() {
             <h3 className="text-lg font-semibold mb-4">Shop</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/category/new-arrivals" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/category/new-arrivals"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   New Arrivals
                 </Link>
               </li>
               <li>
-                <Link to="/category/clothing" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/category/clothing"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Clothing
                 </Link>
               </li>
               <li>
-                <Link to="/category/accessories" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/category/accessories"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Accessories
                 </Link>
               </li>
-              
+
               <li>
-                <Link to="/sale" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/sale"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Sale
                 </Link>
               </li>
@@ -72,23 +97,35 @@ function Fotter() {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/about"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Contact
                 </Link>
               </li>
-              
+
               <li>
-                <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/terms"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  to="/privacy"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -123,13 +160,22 @@ function Fotter() {
               &copy; {new Date().getFullYear()} YIGZU. All rights reserved.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
                 Terms
               </a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
                 Privacy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
                 Cookies
               </a>
             </div>
@@ -137,7 +183,7 @@ function Fotter() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Fotter
+export default Fotter;

@@ -20,12 +20,11 @@ function Navbar() {
   };
   return (
     <div className=" flex items-center justify-between sm:justify-around bg-primary font-poppins h-20 lg:px-16 shadow-lg rounded-b  w-full container mx-auto px-4 md:px-6 max-w-7xl sticky top-0 z-40 bg-white">
-      <Link
-          to="/">
-            <div className="flex items-center">
-        <div className="font-bold text-xl text-gray-900">Yigzu</div>
-      </div>
-          </Link>
+      <Link to="/">
+        <div className="flex items-center">
+          <div className="font-bold text-xl text-gray-900">Yigzu</div>
+        </div>
+      </Link>
       <nav className="hidden md:flex items-center space-x-6">
         <Link
           to="/"
@@ -114,7 +113,6 @@ function Navbar() {
                 <Search className="absolute left-6 top-[72px] h-5 w-5 text-gray-400" />
               </div>
               <nav className="flex flex-col space-y-4">
-                  
                 <Link
                   to="/account"
                   className="text-gray-600 hover:text-gray-900 transition-colors py-2 flex items-center"
