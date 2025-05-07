@@ -1,3 +1,4 @@
+import { LogIn } from "lucide-react";
 import Fotter from "../components/layout/Fotter";
 import Navbar from "../components/layout/Navbar";
 import ProductDetail from "../components/product/ProductDetail";
@@ -14,6 +15,7 @@ export default function RouteLayout() {
         <Route path="/products" element={<ProductPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/products/:productId" element={<ProductDetail />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
       <Fotter/>
     </BrowserRouter>
