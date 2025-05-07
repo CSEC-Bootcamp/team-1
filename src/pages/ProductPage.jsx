@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "../components/product/ProductCard";
 import { ArrowLeft, ArrowRight, Telescope } from "lucide-react";
+import { products } from "../Data/products";
 export default function ProductPage() {
   const product = {
     name: "Tea Cup",
@@ -11,14 +12,18 @@ export default function ProductPage() {
     Stock: 6,
     slug: "tea-cup",
   };
+        
   return (
     <div className="px-4 md:px-8 lg:px-16">
-      <h1 className="flex font-bold text-2xl mb-2 text-red-600 px-4 md:px-8 lg:px-5">
+      <h1 className="flex font-bold text-2xl mb-2 text-black px-4 md:px-8 lg:px-5">
         Explore our products
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full px-3 sm:px-1 md:px-3 lg:px-5">
-        <ProductCard product={product} />
-        <ProductCard product={product} />
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
+        {products.map((product) => (
+          <ProductCard  key={product.id} product={product} />
+        ))}
+      </div> 
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
         <ProductCard product={product} />
         <ProductCard product={product} />
         <ProductCard product={product} />
