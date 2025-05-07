@@ -6,21 +6,21 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Promosection from "../components/Promosection";
 import ProductPage from "./ProductPage";
+import Container from "../components/ui/Container";
 // import { Container } from "../components/ui/c";
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="relative bg-gray-50 overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+      <Container>
         <div className="py-12 lg:py-10 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="text-center lg:text-left mb-40">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-5 tracking-tight ">
                 Elevate Your Style This Season
               </h1>
-              <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
-                Discover our new collection of premium fashion essentials
-                designed for the modern lifestyle.
+              <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 justify-start text-black/60 text-base font-normal  leading-snug">
+              Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="flex items-center justify-center cursor-pointer">
@@ -62,7 +62,7 @@ function Home() {
             </div>
           </div>
         </div>
-        </div>
+        </Container>
       </div>
       
  

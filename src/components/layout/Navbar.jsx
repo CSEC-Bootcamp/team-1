@@ -15,12 +15,11 @@ import { useState } from "react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <div className=" flex items-center justify-between sm:justify-around bg-primary font-poppins h-20 lg:px-16 shadow-lg rounded-b  w-full container mx-auto px-4 md:px-6 max-w-7xl sticky top-0 z-40">
+    <div className=" flex items-center justify-between sm:justify-around bg-primary font-poppins h-20 lg:px-16 shadow-lg rounded-b  w-full container mx-auto px-4 md:px-6 max-w-7xl sticky top-0 z-40 bg-white">
       <Link
           to="/">
             <div className="flex items-center">
@@ -54,7 +53,7 @@ function Navbar() {
         </Link>
       </nav>
 
-      {/* search and icons */}
+      {/* the search and icons */}
 
       <div className="flex items-center space-x-4">
         <div className="relative hidden md:block">
